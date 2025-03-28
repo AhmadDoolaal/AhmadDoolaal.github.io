@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>أزرار الحروف العربية</title>
+
+</head>
+<body>
+    <div>
+        <a href="https://www.youtube.com/@Doolaall"><img src="logo-youtube-png-clipart-11.png" alt="" style="width: 70px; height: 50px;" ></a> 
+     </div>
+     <div id="app" class="buttons-container">
+         <!-- Rows will be generated dynamically -->
+     </div>
+ 
+     <div id="counter" class="counter-container">
+         <span id="greenCount" class="green-count">0</span> : أحرف خضراء | 
+         <span id="orangeCount" class="orange-count">0</span> : أحرف برتقالية
+     </div>
+ 
+     <div id="winMessage" class="win-message"></div>
+ 
+     <button class="refresh-btn">مباراه جديده !</button>
+     
+     <!-- New letter question button -->
+     <button id="letterQuestionBtn" class="letter-question-btn">اختر حرفاً لسؤال</button>
+     
+     <!-- Question modal -->
+     <div id="questionModal" class="question-modal">
+         <div class="question-content">
+             <div id="questionText" class="question-text"></div>
+             <button class="close-question">إغلاق</button>
+         </div>
+     </div>
+     
+     <!-- Letter selection modal -->
+     <div id="letterSelectionModal" class="letter-selection-modal">
+         <div class="letter-selection-content">
+             <div class="letter-selection-title">اختر حرفاً لسؤال</div>
+             <div class="letter-selection-grid" id="letterSelectionGrid">
+                 <!-- Letters will be added dynamically -->
+             </div>
+             <button class="cancel-selection">إلغاء</button>
+         </div>
+     </div>
+     
+     <!-- Color choice modal -->
+     <div id="colorChoiceModal" class="color-choice-modal">
+         <div class="color-choice-content">
+             <div class="color-choice-title">اختر لوناً للحرف</div>
+             <div class="color-choice-buttons">
+                 <button class="color-choice-btn green-choice" id="greenChoice">أخضر</button>
+                 <button class="color-choice-btn orange-choice" id="orangeChoice">برتقالي</button>
+             </div>
+             <button class="cancel-color">إلغاء</button>
+         </div>
+     </div>
+<script src="index.js"></script>
